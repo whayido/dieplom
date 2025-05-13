@@ -16,5 +16,5 @@
 │   ├── page.tsx            # Entry point for the app
 │   ├── layout.tsx          # Layout applied to all application pages
 │   ├── providers.tsx       # Theme provider
-│   ├── more...             # Soon
+│
 └──

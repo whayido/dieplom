@@ -35,7 +35,7 @@ export const UserDropdown = () => {
       <DropdownMenu
         aria-label='User menu actions'
         onAction={(actionKey) => console.log({ actionKey })}>
-        <DropdownItem
+        <DropdownItem 
           key='profile'
           className='flex flex-col justify-start w-full items-start'>
           <p>Профиль</p>
@@ -46,7 +46,7 @@ export const UserDropdown = () => {
   {/*       <DropdownItem key='analytics'>Аналитика</DropdownItem>
         <DropdownItem key='system'>Система</DropdownItem>
         <DropdownItem key='configurations'>Конфигурация</DropdownItem> */}
-       <DropdownItem key='settings'>Настройки</DropdownItem>
+       <DropdownItem key='settings' >Настройки</DropdownItem>
         <DropdownItem
           key='logout'
           color='danger'
