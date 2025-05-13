@@ -16,9 +16,14 @@ const options: Props["options"] = {
   chart: {
     type: "area",
     animations: {
-      easing: "linear",
-      speed: 300,
-    },
+  enabled: true,
+  speed: 300,
+  dynamicAnimation: {
+    enabled: true,
+    speed: 300,
+  },
+},
+
     sparkline: {
       enabled: false,
     },
