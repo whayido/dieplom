@@ -1,15 +1,17 @@
 import {
   Avatar,
-
   Dropdown,
   DropdownItem,
   DropdownMenu,
+  DropdownSection,
   DropdownTrigger,
   Navbar,
   NavbarItem,
+
   
 
-} from "@nextui-org/react";
+} from "@heroui/react";
+
 import React, { useCallback } from "react";
 import { DarkModeSwitch } from "./darkmodeswitch";
 import { useRouter } from "next/navigation";
@@ -46,12 +48,14 @@ export const UserDropdown = () => {
           <p>Профиль</p>
           <p>dieplom@yandex.ru</p>
         </DropdownItem>
-       
+  <DropdownSection>
+
        {/*  <DropdownItem key='team_settings'>Tea</DropdownItem> */}
   {/*       <DropdownItem key='analytics'>Аналитика</DropdownItem>
         <DropdownItem key='system'>Система</DropdownItem>
         <DropdownItem key='configurations'>Конфигурация</DropdownItem> */}
        <DropdownItem key='settings' >Настройки</DropdownItem>
+           </DropdownSection>
         <DropdownItem
           key='logout'
           color='danger'
@@ -59,6 +63,7 @@ export const UserDropdown = () => {
           onPress={handleLogout}>
           Выйти из аккаунта
         </DropdownItem>
+    
         <DropdownItem key='switch' >
             <DarkModeSwitch />
         </DropdownItem>
